@@ -1,0 +1,395 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Заголовок страницы</title> 	
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.0a2.min.css" />
+<script src="jquery-1.4.4.min.js"></script>
+<script src="jquery.mobile-1.0a2.min.js"></script>
+<style type="text/css">
+div.footer:before {
+    position: fixed;
+    bottom: 0;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+    display: block;
+    content: '\0000a0';
+    opacity: 0.7;
+}
+
+
+#header {
+	position: fixed;
+	top: 0;
+	display: block;
+}
+
+#navbar {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.select {
+	font-weight: 600;
+}
+</style>
+
+</head> 
+<body> 
+
+<div data-role="page" id="main" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Теория алгоритмов</h1>
+		<a href="#third" data-icon="gear" class="ui-btn-right">Options</a>
+		<a href="#second" data-icon="grid" class="ui-btn-left">Содержание</a>
+	</div>
+	<div data-role="content">
+	<h1 align="center"><br>Android учебник по Теории Алгоритмов</h1>	
+		<p align="justify"><span class="select">Тео́рия алгори́тмов</span> — наука, находящаяся на стыке математики и информатики, изучающая общие свойства и закономерности алгоритмов и разнообразные формальные модели их представления. К задачам теории алгоритмов относятся формальное доказательство алгоритмической неразрешимости задач, асимптотический анализ сложности алгоритмов, классификация алгоритмов в соответствии с классами сложности, разработка критериев сравнительной оценки качества алгоритмов и т. п. Вместе с математической логикой теория алгоритмов образует теоретическую основу вычислительных наук.
+		</p>
+		<h2>Возникновение теории алгоритмов</h2>
+		<p align="justify">Развитие теории алгоритмов начинается с доказательства К. Гёделем теорем о неполноте формальных систем, включающих арифметику, первая из которых была доказана в 1931 г. Возникшее в связи с этими теоремами предположение о невозможности алгоритмического разрешения многих математических проблем (в частности, проблемы выводимости в исчислении предикатов) вызвало необходимость стандартизации понятия алгоритма. Первые стандартизованные варианты этого понятия были разработаны в 30-х годах XX века в работах А. Тьюринга, А. Чёрча и Э. Поста. Предложенные ими машина Тьюринга, машина Поста и лямбда-исчисление Чёрча оказались эквивалентными друг другу. Основываясь на работах Гёделя, С. Клини ввел понятие рекурсивной функции, также оказавшееся эквивалентным вышеперечисленным.
+
+Одним из наиболее удачных стандартизованных вариантов алгоритма является введённое А. А. Марковым понятие нормального алгоритма. Оно было разработано десятью годами позже работ Тьюринга, Поста, Чёрча и Клини в связи с доказательством алгоритмической неразрешимости ряда алгебраических проблем.
+
+Следует отметить также немалый вклад в теорию алгоритмов, сделанный Д. Кнутом, A. Ахо и Дж. Ульманом. Одной из лучших работ на эту тему является книга «Алгоритмы: построение и анализ» Томаса Х. Кормена, Чарльза И. Лейзерсона, Рональда Л. Ривеста, Клиффорда Штайна.</p>
+	</div>
+	<div data-role="footer" id="footer">
+		<h4>Подвал страницы</h4>
+	</div>
+</div>
+
+<div data-role="page" id="second" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Содержание</h1>
+		<a href="#main" data-icon="home" class="ui-btn-right">Главная</a>
+	</div>
+	<div data-role="content">
+	<br><br>
+	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="false">
+   <h3>Тема 1</h3>
+   <ul data-role="listview">
+   <li><a href="#page1">Глава 1</a></li>
+   <li><a href="#page2">Глава 2</a></li>
+   <li><a href="#page3">Глава 3</a></li>
+   <li><a href="#page4">Глава 4</a></li>
+   </ul>
+</div>
+	<div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="false">
+   <h3>Тема 2</h3>
+   <ul data-role="listview">
+   <li><a href="#page01">Глава 1</a></li>
+   <li><a href="#page02">Глава 2</a></li>
+   <li><a href="#page03">Глава 3</a></li>
+   <li><a href="#page04">Глава 4</a></li>
+   </ul>
+</div>
+	
+	</div>
+</div>
+
+<div data-role="page" id="third" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Содержание</h1>
+	</div>
+	<div data-role="content">	
+		<p><br>Пример мультистраничности</p>		
+	</div>
+</div>
+
+<div data-role="page" id="page1" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 1</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 1</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page2" data-role="button" data-icon="arrow-l" class="ui-disabled ui-btn-left">Предыдущая</a></li>	
+		<li><a href="#page2" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div data-role="page" id="page2" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 1</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 2</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>		
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page1" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#page3" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div data-role="page" id="page3" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 1</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 3</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>		
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page2" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#page4" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div data-role="page" id="page4" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 1</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 4</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>		
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page3" data-role="button" data-icon="arrow-l">Предыдущая</a></li>	
+		<li><a href="#" data-role="button" data-icon="arrow-r" class="ui-disabled ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+
+<div data-role="page" id="page01" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 2</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 1</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#" data-role="button" data-icon="arrow-l" class="ui-disabled ui-btn-left">Предыдущая</a></li>	
+		<li><a href="#page02" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page02" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 2</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 2</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page01" data-role="button" data-icon="arrow-l" >Предыдущая</a></li>	
+		<li><a href="#page03" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page03" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 2</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 3</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page02" data-role="button" data-icon="arrow-l" >Предыдущая</a></li>	
+		<li><a href="#page04" data-role="button" data-icon="arrow-r" class="ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+
+<div data-role="page" id="page04" data-add-back-btn="true" data-theme="b">
+	<div data-role="header" id="header">
+		<h1>Тема 2</h1>
+		<a href="#second" data-icon="grid" class="ui-btn-right">Содержание</a>
+	</div>
+	<div data-role="content">	
+		<h1 align="center"><br>Глава 4</h1>
+		<p align="justify">oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+	</div>
+	<div data-role="navbar" id="navbar">
+	<ul>
+	<li><a href="#page03" data-role="button" data-icon="arrow-l" >Предыдущая</a></li>	
+		<li><a href="#" data-role="button" data-icon="arrow-r" class="ui-disabled ui-btn-right">Следующая</a></li>
+	</ul>
+	</div>
+</div>
+</body>
+</html>
