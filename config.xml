@@ -5,7 +5,7 @@
 		versionCode	= "10"
 		version 	= "1.0.0" >
 
-<icon scr="icon.png" />
+<icon src="icon.png" />
 		<name>Теория Алгоритмов</name>
 
 		<description>
